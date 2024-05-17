@@ -3,10 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>9s</title>
+    
 </head>
 <body>
   <h1>九九是女同</h1>
    <h2>sky是女同</h2> 
     <h3>三熊是铁t</h3>
+    <h1 style="color: hotpink;">爱兰心</h1>
+		<style>
+		    .heart {
+		        position: relative;
+		        margin: 50px;
+		        width: 100px;
+		        height: 90px;
+		        animation: spin 2s infinite linear;
+		    }
+		    .heart::before, .heart::after {
+		        position: absolute;
+		        content: "";
+		        top: 40px;
+		        width: 52px;
+		        height: 80px;
+		        border-radius: 50px 50px 0 0; /* 圆角 */
+		        background: red; /* 爱心颜色 */
+		    }
+		    .heart::before {
+		        left: 50px;
+		        transform: rotate(-45deg); /* 旋转角度 */
+		        transform-origin: 0 100%;
+		    }
+		    .heart::after {
+		        left: 0;
+		        transform: rotate(45deg); /* 旋转角度 */
+		        transform-origin: 100% 100%;
+		    }
+		    @keyframes spin {
+		        from { transform: rotate(0deg); }
+		        to { transform: rotate(360deg); }
+		    }
+		</style>
+    
 </body>
 </html>
